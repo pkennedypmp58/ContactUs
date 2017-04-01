@@ -1,0 +1,116 @@
+<!-- =============== -->
+<!--  <!DOCTYPE html>  -->
+<html>
+	<!-- =========================================================== -->
+	<!-- Start Styles. Move the 'style' tags and everything between them to between the 'head' tags -->
+	<!-- =========================================================== -->
+	<style type="text/css">
+	.myTable { <!-- background-color:#FFFFE0; -->border-collapse:collapse;font-family:Georgia, Garamond, Serif;color:black; }
+	.myTable th { width:50%;font:bold 18px/1.1em Arial, Helvetica, Sans-Serif;text-shadow: 1px 1px 4px black;letter-spacing:0.1em;<!-- background-color:#BDB76B; -->color:white; }
+	.myTable td, .myTable th { padding:2px;<!-- border:1px solid #BDB76B; --> }
+	.myTable td { line-height:2.0em; }  <!-- spacing btwn cells -->
+	</style>
+	
+	<!-- =========================================================== -->
+	<!-- Define Table and Headings                                   -->
+	<!-- =========================================================== -->	
+	<table class="myTable">
+		<tr>
+			<th> <!-- Table Header goes here... if you want one --></th>
+		</tr>
+
+	<!-- =========================================================== -->
+	<!-- Customer Contact Information                                -->
+	<!-- =========================================================== -->
+		<tr>
+			<td> 
+				<p style="text-align:right">First Name: </p> 
+			</td>
+			<td>
+				<input type="text" name="fname" />
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p style="text-align:right">Last Name: </p> 
+			</td>
+			<td>
+				<input type="text" name="fname" />
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p style="text-align:right">Email: </p> 
+			</td>
+			<td>
+				<input type="text" name="fname" />
+			</td>
+		</tr>
+
+	<!-- =========================================================== -->
+	<!-- Type of License                                             -->
+	<!-- =========================================================== -->
+		<tr>
+			<td> <p style="text-align:right">Type of License: </p> </td>
+			<td> <input type="radio" name="answer" value="Business"/checked>Business
+				 <input type="radio" name="answer" value="Personal"/>Personal
+			</td> 
+		</tr>
+
+	<!-- =========================================================== -->
+	<!-- Reasons                                                     -->
+	<!-- =========================================================== -->
+		<tr>
+			<td>
+				<p style="text-align:right">Reason:</p>
+			</td>
+			<td>
+				<select name="reason">
+					<option value="Select a Reason">Select a Reason</option>
+					<option value="Software Support">Software Support</option>
+					<option value="Hardware Support">Hardware Support</option>
+					<option value="Information Request">Information Request</option>  
+				</select>
+			</td>
+		</tr>
+
+	<!-- =========================================================== -->
+	<!-- Additional Information                                      -->
+	<!-- =========================================================== -->
+		<tr>
+			<td valign="top">
+				<p style="text-align:right"> Additional Information: </p>
+			</td>
+			<td>
+				<textarea name="Additional Information" rows="10" cols="30"></textarea>
+			</td>
+		</tr>
+				
+	<!-- =========================================================== -->
+	<!-- Terms of Service                                            -->
+	<!-- =========================================================== -->
+		<tr>
+			<td>
+			</td>
+			<td>
+				<p style="text-align:left"> <input type="checkbox" name="Terms" value="Terms"> 
+				I have read the terms of service.</p>
+			</td>
+		</tr>
+
+	<!-- ============================================================ -->
+	<!-- Send Request                                                 -->
+	<!-- ============================================================ -->
+		<tr>
+			<td>
+			</td>
+			<td>
+				<p style="text-align:center"> 
+					<input type="submit" name="Send Request" value="Send Request">
+				</p>
+			</td>
+		</tr>
+
+
+	</table>
+</html>
